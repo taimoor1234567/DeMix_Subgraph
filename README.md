@@ -95,14 +95,14 @@
 
 ## Deploy DeMix's Subgraphs
 
-1. `yarn install`
-2. `yarn run generate-<blockchain_name_here>`
-E.g: `yarn run generate-bsc`
+1. `$ yarn install`
+2. `$ yarn run generate-<blockchain_name_here>`
+E.g: `$ yarn run generate-bsc`
 3. replace `$TOKEN (line 52 in package.json)` with an access token
-4. `yarn run deploy:demix-<blockchain_name_here>`
-E.g: `yarn run deploy:demix-bsc`
+4. `$ yarn run deploy:demix-<blockchain_name_here>`
+E.g: `$ yarn run deploy:demix-bsc`
 
-Optional: `yarn run lint` to fix code and implement prettier
+Optional: `$ yarn run lint` to fix code and implement prettier
 
 
 
