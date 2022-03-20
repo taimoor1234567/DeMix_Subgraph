@@ -8,12 +8,12 @@
     <p align="center">A decentralized protocol for indexing and querying data from DeMix contracts across all supported blockchains.</p>
 </p>
 
-<div align="center">
-## DeMix Subgraph Supported Chains:
-</div>
+
+
+Supported Chains:
 <div align="center">
     <h4>
-    <a href="https://thegraph.com/hosted-service/subgraph/decentraworlddewo/bsc-demix-subgraphx">
+    <a href="https://thegraph.com/hosted-service/subgraph/decentraworlddewo/bsc-demix-Subgraph">
             😁 BSC
         </a>
         <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
@@ -60,11 +60,16 @@
 </div>
 
 
-| DeMix is a zero-knowledge DApp which allows a variety of Blockchain users to prove send & receive crypto currencies without revealing their original identity. At the same time, it allows users to collect their note without using a wallet with funds for gas (using relayers). It is designed to be a simple and useful privacy motivated DAPP for DecentraWorld`s community and users. It`s time to bring freedom to the people |
+
+| DeMix is a zero-knowledge DApp which allows a variety of Blockchain users to prove send & receive crypto currencies without revealing their original identity. At the same time, it allows users to collect their note without using a wallet with funds for gas (using relayers). It is designed to be a simple and useful privacy motivated DAPP for DecentraWorld's community and users. It's time to bring freedom to the people |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
 
+
+
 ⚠️ This repositories is still being worked on [`version/0.0.1`](https://github.com/DecentraWorldDEWO/DeMix_Subgraph). We will update this repo with the final versio as soon as DeMix is launched across all supported blockchains mentioned above, and we`re done testing & stressing the beta version of DeMix. 
+
+
 
 
 
@@ -73,6 +78,8 @@
 
 1. `node v16.14.2(LTS)`
 2. `yarn 1.22.18`
+
+
 
 
 
@@ -86,12 +93,14 @@
 
 
 
+
+
 ## Deploy DeMix`s Subgraphs
 
 1. `yarn install`
 2. `yarn run generate-<blockchain_name_here>`
 E.g: `yarn run generate-bsc`
-3. replace `$TOKEN` (line 52 in package.json) with an access token
+3. replace `$TOKEN (line 52 in package.json)` with an access token
 4. `yarn run deploy:demix-<blockchain_name_here>`
 E.g: `yarn run deploy:demix-bsc`
 
@@ -100,23 +109,27 @@ Optional: `yarn run lint` to fix code and implement prettier
 
 
 
+
+
 ## Deployed subgraphs
 
 The following is a list of our deployed subgraphs. Each `subgraph.yaml` file can be used with a `thegraph.com` hosted service. It helps our smart contracts to verify notes on the blockchain even when there is many transactions to look through.
 
-| Chain ID | Subgraph                                                                                                          |   Status   |
-| -------- | ----------------------------------------------------------------------------------------------------------------- | ---------- |
-| 97       | [Testnet-DeMix-Subgraphx](https://thegraph.com/hosted-service/subgraph/decentraworlddewo/bsc-demix-subgraphx)     | Deployed   |
-| 1        | [Mainnet-DeMix-Subgraphx](https://thegraph.com/hosted-service/subgraph/decentraworlddewo/bsc-demix-subgraphx)     | Undeployed |
-| 56       | [BSC-DeMix-Subgraphx](https://thegraph.com/hosted-service/subgraph/decentraworlddewo/bsc-demix-subgraphx)         | Undeployed |
-| 43114    | [Avalanche-DeMix-Subgraphx](https://thegraph.com/hosted-service/subgraph/decentraworlddewo/bsc-demix-subgraphx)   | Undeployed |
-| 250      | [Fantom-DeMix-Subgraphx](https://thegraph.com/hosted-service/subgraph/decentraworlddewo/bsc-demix-subgraphx)      | Undeployed |
-| 137      | [Matic-DeMix-Subgraphx](https://thegraph.com/hosted-service/subgraph/decentraworlddewo/bsc-demix-subgraphx)       | Undeployed |
-| 25       | [Cronos-DeMix-Subgraphx](https://thegraph.com/hosted-service/subgraph/decentraworlddewo/bsc-demix-subgraphx)      | Undeployed |
-| 42161    | [Arbitrum-DeMix-Subgraphx](https://thegraph.com/hosted-service/subgraph/decentraworlddewo/bsc-demix-subgraphx)    | Undeployed |
-| 10       | [Optimism-DeMix-Subgraphx](https://thegraph.com/hosted-service/subgraph/decentraworlddewo/bsc-demix-subgraphx)    | Undeployed |
-| 100      | [xDai-DeMix-Subgraphx](https://thegraph.com/hosted-service/subgraph/decentraworlddewo/bsc-demix-subgraphx)        | Undeployed |
-| 5        | [Goerli-DeMix-Subgraphx](https://thegraph.com/hosted-service/subgraph/decentraworlddewo/bsc-demix-subgraphx)      | Undeployed |
+| Chain ID | Subgraph                                                                                                                |   Status   |
+| -------- | ----------------------------------------------------------------------------------------------------------------------- | ---------- |
+| 97       | [Testnet-DeMix-Subgraph](https://thegraph.com/hosted-service/subgraph/decentraworlddewo/bsc-testnet-demix-Subgraph)     |  Deployed  |
+| 1        | [Mainnet-DeMix-Subgraph](https://thegraph.com/hosted-service/subgraph/decentraworlddewo/mainnet-demix-Subgraph)         | Undeployed |
+| 56       | [BSC-DeMix-Subgraph](https://thegraph.com/hosted-service/subgraph/decentraworlddewo/bsc-demix-Subgrapxh)                | Undeployed |
+| 43114    | [Avalanche-DeMix-Subgraph](https://thegraph.com/hosted-service/subgraph/decentraworlddewo/avalanche-demix-Subgraph)     | Undeployed |
+| 250      | [Fantom-DeMix-Subgraph](https://thegraph.com/hosted-service/subgraph/decentraworlddewo/fantom-demix-Subgraph)           | Undeployed |
+| 137      | [Matic-DeMix-Subgraph](https://thegraph.com/hosted-service/subgraph/decentraworlddewo/matic-demix-Subgraph)             | Undeployed |
+| 25       | [Cronos-DeMix-Subgraph](https://thegraph.com/hosted-service/subgraph/decentraworlddewo/cronos-demix-Subgraph)           | Undeployed |
+| 42161    | [Arbitrum-DeMix-Subgraph](https://thegraph.com/hosted-service/subgraph/decentraworlddewo/arbitrum-demix-Subgraph)       | Undeployed |
+| 10       | [Optimism-DeMix-Subgraph](https://thegraph.com/hosted-service/subgraph/decentraworlddewo/optimism-demix-Subgraph)       | Undeployed |
+| 100      | [xDai-DeMix-Subgraph](https://thegraph.com/hosted-service/subgraph/decentraworlddewo/xdai-demix-Subgraph)               | Undeployed |
+| 5        | [Goerli-DeMix-Subgraph](https://thegraph.com/hosted-service/subgraph/decentraworlddewo/goerli-demix-Subgraph)           | Undeployed |
+
+
 
 
 
