@@ -84,7 +84,7 @@
 
 ## Create a "Hosted-Service" For Each Subgraph
 
-1. Sign up with `The Graph(https://thegraph.com/hosted-service/)`
+1. Sign up with [`The Graph`](https://thegraph.com/hosted-service/)
 2. Add a `subgraph` under hosted service.
 3. The name of each subgraph needs to match the name on the script `package.json`.
 
@@ -93,7 +93,7 @@
 
 
 
-## Deploy DeMix`s Subgraphs
+## Deploy DeMix's Subgraphs
 
 1. `yarn install`
 2. `yarn run generate-<blockchain_name_here>`
@@ -137,11 +137,11 @@ The following is a list of our deployed subgraphs. Each `subgraph.yaml` file can
 We encourage everyone to use subgraphs for complicated indexing on the blockchain.
 If you would like to use this repo for your own code, make sure to adjust the following files.
 
-Example subgraph by The Graph: `@graphprotocol/example-subgraph(https://github.com/graphprotocol/example-subgraph)`
+Example subgraph by The Graph: [`@graphprotocol/example-subgraph`](https://github.com/graphprotocol/example-subgraph)
 
-1. The schema file `schema.graphql(https://github.com/DecentraWorldDEWO/DeMix_Subgraph/blob/main/schema.graphql)` needs to match your contract`s query and indexing needs.
-2. Create a new `subgraph.yaml` file in the `/subgraphs/subgraph.yaml` folder, and name it as you wish. You can use existing .yaml files as a referance, or the `create-yaml-file.js(https://github.com/DecentraWorldDEWO/DeMix_Subgraph/blob/main/create-yaml-file.js)` file as a .yaml generator script.
-3. Adjust mapping `.ts` files according to your needs, I`d suggest to follow TheGraph`s documentation to learn how to initiate, build, and deploy your subgraphs properly. Always run the `yarn deploy` command above again to deploy the updated version of your subgraph. Mappings are AssemblyScript code called whenever the Graph Node finds an event or a call specified in the manifest.
-4. In the mustache folder you will find templates to DeMix`s subgraph, as we use multiple blockchain this makes the deployment process of each subgraph much easier. You can adjust the templates according to your need. The `yaml.mustache(https://github.com/DecentraWorldDEWO/DeMix_Subgraph/blob/main/mustache/yaml.mustache)` file contains the `schema.graphql` template, that will need to watch the indexing schema that you need. 
-5. The `abis(https://github.com/DecentraWorldDEWO/DeMix_Subgraph/blob/main/abis)` folder contains abis of each contract that is needed for DeMix`s indexing. Change the current files with the abi files of your contracts that will be indexed. These ABI files are being pulled by the `subgraph.yaml` file that is used to deploy your subgraph. 
-6. The scripts in `package.json(https://github.com/DecentraWorldDEWO/DeMix_Subgraph/blob/main/package.json)` are made to make the build & deployment process easy. Simply add/adjust the `generate`, `yaml`, `codegen`, `build`, and `deploy` scripts according to your new `subgraph.yaml` file name and other changes. 
+1. The schema file [`schema.graphql`](https://github.com/DecentraWorldDEWO/DeMix_Subgraph/blob/main/schema.graphql) needs to match your contract`s query and indexing needs.
+2. Create a new `subgraph.yaml` file in the `/subgraphs/subgraph.yaml` folder, and name it as you wish. You can use existing .yaml files as a referance, or the [`create-yaml-file.js`](https://github.com/DecentraWorldDEWO/DeMix_Subgraph/blob/main/create-yaml-file.js) file as a .yaml generator script.
+3. Adjust mapping `.ts` files according to your needs, I'd suggest to follow TheGraph's documentation to learn how to initiate, build, and deploy your subgraphs properly. Always run the `yarn deploy` command above again to deploy the updated version of your subgraph. Mappings are AssemblyScript code called whenever the Graph Node finds an event or a call specified in the manifest.
+4. In the mustache folder you will find templates to DeMix's subgraph, as we use multiple blockchain this makes the deployment process of each subgraph much easier. You can adjust the templates according to your need. The [`yaml.mustache`](https://github.com/DecentraWorldDEWO/DeMix_Subgraph/blob/main/mustache/yaml.mustache) file contains the `schema.graphql` template, that will need to watch the indexing schema that you need. 
+5. The [`abis`](https://github.com/DecentraWorldDEWO/DeMix_Subgraph/blob/main/abis) folder contains abis of each contract that is needed for DeMix's indexing. Change the current files with the abi files of your contracts that will be indexed. These ABI files are being pulled by the `subgraph.yaml` file that is used to deploy your subgraph. 
+6. The scripts in [`package.json`](https://github.com/DecentraWorldDEWO/DeMix_Subgraph/blob/main/package.json) are made to make the build & deployment process easy. Simply add/adjust the `generate`, `yaml`, `codegen`, `build`, and `deploy` scripts according to your new `subgraph.yaml` file name and other changes. 
