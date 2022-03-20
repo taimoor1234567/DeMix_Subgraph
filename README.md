@@ -9,10 +9,8 @@
 </p>
 
 
-
-Supported Chains:
 <div align="center">
-    <h4>
+    <h4> Supported Chains: 
     <a href="https://thegraph.com/hosted-service/subgraph/decentraworlddewo/bsc-demix-Subgraph">
             😁 BSC
         </a>
