@@ -96,7 +96,7 @@
 ## Deploy DeMix's Subgraphs
 
 1. `yarn install`
-2. 'node ./create-yaml-file create-yaml -e chapel | mustache - mustache/yaml.mustache > subgraphs/demix-subgraph-chapel.yaml' replace the 'chapel.yaml' with any other blockchain '.yaml' file. 
+2. `node ./create-yaml-file create-yaml -e chapel | mustache - mustache/yaml.mustache > subgraphs/demix-subgraph-chapel.yaml` replace the `chapel.yaml` with any other blockchain `.yaml` file. 
 3. `yarn run generate-<blockchain_name_here>`
 E.g: `yarn run generate-bsc`
 4. replace `$TOKEN (line 52 in package.json)` with an access token
