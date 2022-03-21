@@ -6,7 +6,7 @@ module.exports = {
       dataSourceKind: 'ethereum/contract',
       mapping: {
         kind: 'ethereum/events',
-        version: '0.0.4',
+        version: '0.0.5',
         language: 'wasm/assemblyscript',
       },
     },

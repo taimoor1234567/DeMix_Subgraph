@@ -76,6 +76,7 @@
 
 1. `node v16.14.2(LTS)`
 2. `yarn 1.22.18`
+3. `npm install -g @graphprotocol/graph-cli@latest`
 
 
 
