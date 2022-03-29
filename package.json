@@ -61,7 +61,7 @@
     "build:demix-cronos": "graph build subgraphs/demix-subgraph-cronos.yaml",
     "build:demix-fantom": "graph build subgraphs/demix-subgraph-fantom.yaml",
     "deploy": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ --access-token $TOKEN",
-    "deploy:demix-chapel": "yarn deploy -- decentraworldofficial/tornadotesting2 subgraphs/demix-subgraph-chapel.yaml",
+    "deploy:demix-chapel": "yarn deploy -- decentraworlddewo/bsc-testnet-demix-subgraph subgraphs/demix-subgraph-chapel.yaml",
     "deploy:demix-bsc": "yarn deploy -- decentraworlddewo/bsc-demix-subgraphx subgraphs/demix-subgraph-bsc.yaml",
     "deploy:demix-xdai": "yarn deploy -- decentraworlddewo/xdai-demix-subgraph subgraphs/demix-subgraph-xdai.yaml",
     "deploy:demix-matic": "yarn deploy -- decentraworlddewo/matic-demix-subgraph subgraphs/demix-subgraph-matic.yaml",
