@@ -1,7 +1,7 @@
 [
   {
     "inputs": [
-      { "internalType": "address", "name": "_torn", "type": "address" },
+      { "internalType": "address", "name": "_dewo", "type": "address" },
       { "internalType": "address", "name": "_governance", "type": "address" },
       { "internalType": "address", "name": "_ens", "type": "address" },
       { "internalType": "bytes32", "name": "_staking", "type": "bytes32" },
