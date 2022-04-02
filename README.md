@@ -102,7 +102,8 @@ E.g: `yarn run generate-bsc`
 3. replace `$TOKEN (line 52 in package.json)` with an access token
 4. `yarn run deploy:demix-<blockchain_name_here>`
 E.g: `yarn run deploy:demix-bsc`
-
+Or Deploy on all supported chains at the same time:
+5. `yarn run deploy:demix-<blockchain_name_here>`
 Optional: `yarn run lint` to fix code and implement prettier
 
 

@@ -397,7 +397,7 @@
     "inputs": [],
     "name": "dewo",
     "outputs": [
-      { "internalType": "contract TORN", "name": "", "type": "address" }
+      { "internalType": "contract DEWO", "name": "", "type": "address" }
     ],
     "stateMutability": "view",
     "type": "function"

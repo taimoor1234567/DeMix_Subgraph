@@ -8,9 +8,9 @@
     name: Echoer
     network: cronos
     source:
-      address: "0x"
+      address: "0x036f41967c42EA4d48589553D8aD07391ca9e022"
       abi: Echoer
-      startBlock: 0000000
+      startBlock: 2162053
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.5
@@ -25,12 +25,12 @@
         - event: Echo(indexed address,bytes)
           handler: handleEcho
   - kind: ethereum/contract
-    name: Instance-0.1-bnb
+    name: Instance-200-cro
     network: cronos
     source:
-      address: "0x"
+      address: "0xcd5FA3AC37ffe88b87dd9f6f454D59AEb4a09060"
       abi: Instance
-      startBlock: 0000000
+      startBlock: 2159172
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.5
@@ -48,12 +48,12 @@
         - event: Withdrawal(address,bytes32,indexed address,uint256)
           handler: handleWithdrawal
   - kind: ethereum/contract
-    name: Instance-1-bnb
+    name: Instance-2000-cro
     network: cronos
     source:
-      address: "0x"
+      address: "0x09621a9b696213De337044CE22D5A26a41423A69"
       abi: Instance
-      startBlock: 0000000
+      startBlock: 2159176
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.5
@@ -71,12 +71,12 @@
         - event: Withdrawal(address,bytes32,indexed address,uint256)
           handler: handleWithdrawal
   - kind: ethereum/contract
-    name: Instance-10-bnb
+    name: Instance-20000-cro
     network: cronos
     source:
-      address: "0x"
+      address: "0xaacBfE8E8AA19abd57fD8FC66824079da9574101"
       abi: Instance
-      startBlock: 0000000
+      startBlock: 2159188
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.5
@@ -94,12 +94,196 @@
         - event: Withdrawal(address,bytes32,indexed address,uint256)
           handler: handleWithdrawal
   - kind: ethereum/contract
-    name: Instance-100-bnb
+    name: Instance-200000-cro
     network: cronos
     source:
-      address: "0x"
+      address: "0xe7671FedE34ca180A6FCb4744beD492440bB072f"
       abi: Instance
-      startBlock: 0000000
+      startBlock: 2159192
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.5
+      language: wasm/assemblyscript
+      file: ../src/mapping-instance.ts
+      entities:
+        - Deposit
+        - Withdrawal
+      abis:
+        - name: Instance
+          file: ../abis/Instance.json
+      eventHandlers:
+        - event: Deposit(indexed bytes32,uint32,uint256)
+          handler: handleDeposit
+        - event: Withdrawal(address,bytes32,indexed address,uint256)
+          handler: handleWithdrawal
+  - kind: ethereum/contract
+    name: Instance-100-usdc
+    network: cronos
+    source:
+      address: "0x4cEa0eb5Adff76D1E9E27d8e1D33683411bDD28F"
+      abi: Instance
+      startBlock: 2159199
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.5
+      language: wasm/assemblyscript
+      file: ../src/mapping-instance.ts
+      entities:
+        - Deposit
+        - Withdrawal
+      abis:
+        - name: Instance
+          file: ../abis/Instance.json
+      eventHandlers:
+        - event: Deposit(indexed bytes32,uint32,uint256)
+          handler: handleDeposit
+        - event: Withdrawal(address,bytes32,indexed address,uint256)
+          handler: handleWithdrawal
+  - kind: ethereum/contract
+    name: Instance-1000-usdc
+    network: cronos
+    source:
+      address: "0x65eC395Aa1B9178c7860990EE12BF71e859c2102"
+      abi: Instance
+      startBlock: 2159242
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.5
+      language: wasm/assemblyscript
+      file: ../src/mapping-instance.ts
+      entities:
+        - Deposit
+        - Withdrawal
+      abis:
+        - name: Instance
+          file: ../abis/Instance.json
+      eventHandlers:
+        - event: Deposit(indexed bytes32,uint32,uint256)
+          handler: handleDeposit
+        - event: Withdrawal(address,bytes32,indexed address,uint256)
+          handler: handleWithdrawal
+  - kind: ethereum/contract
+    name: Instance-10000-usdc
+    network: cronos
+    source:
+      address: "0xab02596D90B35CC14B5a81A34677e6616A1ef367"
+      abi: Instance
+      startBlock: 2159246
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.5
+      language: wasm/assemblyscript
+      file: ../src/mapping-instance.ts
+      entities:
+        - Deposit
+        - Withdrawal
+      abis:
+        - name: Instance
+          file: ../abis/Instance.json
+      eventHandlers:
+        - event: Deposit(indexed bytes32,uint32,uint256)
+          handler: handleDeposit
+        - event: Withdrawal(address,bytes32,indexed address,uint256)
+          handler: handleWithdrawal
+  - kind: ethereum/contract
+    name: Instance-100000-usdc
+    network: cronos
+    source:
+      address: "0xd4ef42B7d9c8D6A733d364BCF2Db0C906fbf7D96"
+      abi: Instance
+      startBlock: 2159259
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.5
+      language: wasm/assemblyscript
+      file: ../src/mapping-instance.ts
+      entities:
+        - Deposit
+        - Withdrawal
+      abis:
+        - name: Instance
+          file: ../abis/Instance.json
+      eventHandlers:
+        - event: Deposit(indexed bytes32,uint32,uint256)
+          handler: handleDeposit
+        - event: Withdrawal(address,bytes32,indexed address,uint256)
+          handler: handleWithdrawal
+  - kind: ethereum/contract
+    name: Instance-0.01-wbtc
+    network: cronos
+    source:
+      address: "0xFFb29b051D9Da5a57678Be843Cc9527048BA2ee5"
+      abi: Instance
+      startBlock: 2159263
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.5
+      language: wasm/assemblyscript
+      file: ../src/mapping-instance.ts
+      entities:
+        - Deposit
+        - Withdrawal
+      abis:
+        - name: Instance
+          file: ../abis/Instance.json
+      eventHandlers:
+        - event: Deposit(indexed bytes32,uint32,uint256)
+          handler: handleDeposit
+        - event: Withdrawal(address,bytes32,indexed address,uint256)
+          handler: handleWithdrawal
+  - kind: ethereum/contract
+    name: Instance-0.1-wbtc
+    network: cronos
+    source:
+      address: "0xA95dA51E885175285F3111410F7b886b9F26E7D4"
+      abi: Instance
+      startBlock: 2159277
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.5
+      language: wasm/assemblyscript
+      file: ../src/mapping-instance.ts
+      entities:
+        - Deposit
+        - Withdrawal
+      abis:
+        - name: Instance
+          file: ../abis/Instance.json
+      eventHandlers:
+        - event: Deposit(indexed bytes32,uint32,uint256)
+          handler: handleDeposit
+        - event: Withdrawal(address,bytes32,indexed address,uint256)
+          handler: handleWithdrawal
+  - kind: ethereum/contract
+    name: Instance-0.5-wbtc
+    network: cronos
+    source:
+      address: "0x4967f8Bb8478057252b614bD613DDBFe81a416E2"
+      abi: Instance
+      startBlock: 2159289
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.5
+      language: wasm/assemblyscript
+      file: ../src/mapping-instance.ts
+      entities:
+        - Deposit
+        - Withdrawal
+      abis:
+        - name: Instance
+          file: ../abis/Instance.json
+      eventHandlers:
+        - event: Deposit(indexed bytes32,uint32,uint256)
+          handler: handleDeposit
+        - event: Withdrawal(address,bytes32,indexed address,uint256)
+          handler: handleWithdrawal
+  - kind: ethereum/contract
+    name: Instance-1-wbtc
+    network: cronos
+    source:
+      address: "0x9B249F2F7bf6B6EE021ED65bf944cCE30241dE2A"
+      abi: Instance
+      startBlock: 2159292
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.5
@@ -120,9 +304,9 @@
     name: Proxy
     network: cronos
     source:
-      address: "0x"
+      address: "0x7FdA58696ba31A0d0596875a8E0662A9EeF908e3"
       abi: Proxy
-      startBlock: 0000000
+      startBlock: 2162051
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.5

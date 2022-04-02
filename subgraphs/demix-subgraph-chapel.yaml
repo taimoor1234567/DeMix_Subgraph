@@ -8,9 +8,9 @@
     name: Echoer
     network: chapel
     source:
-      address: "0xA2A31327594AA3b63af2aE9c7bd3C28401d4Ca6B"
+      address: "0xCDE524ECd16853FC93ff711cF4692D5B49EE32f9"
       abi: Echoer
-      startBlock: 17706730
+      startBlock: 18071327
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.5
@@ -28,9 +28,262 @@
     name: Instance-0.1-bnb
     network: chapel
     source:
-      address: "0xda2F062F9643e907da4EE71D32E67e6f97B4E827"
+      address: "0xb314Cb3C07F619CE2BF3e3370586054Ee4a70963"
       abi: Instance
-      startBlock: 17706251
+      startBlock: 18042465
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.5
+      language: wasm/assemblyscript
+      file: ../src/mapping-instance.ts
+      entities:
+        - Deposit
+        - Withdrawal
+      abis:
+        - name: Instance
+          file: ../abis/Instance.json
+      eventHandlers:
+        - event: Deposit(indexed bytes32,uint32,uint256)
+          handler: handleDeposit
+        - event: Withdrawal(address,bytes32,indexed address,uint256)
+          handler: handleWithdrawal
+  - kind: ethereum/contract
+    name: Instance-1-bnb
+    network: chapel
+    source:
+      address: "0xB2A2C70B0B1702E657258709416f0DFaacF96922"
+      abi: Instance
+      startBlock: 18042563
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.5
+      language: wasm/assemblyscript
+      file: ../src/mapping-instance.ts
+      entities:
+        - Deposit
+        - Withdrawal
+      abis:
+        - name: Instance
+          file: ../abis/Instance.json
+      eventHandlers:
+        - event: Deposit(indexed bytes32,uint32,uint256)
+          handler: handleDeposit
+        - event: Withdrawal(address,bytes32,indexed address,uint256)
+          handler: handleWithdrawal
+  - kind: ethereum/contract
+    name: Instance-10-bnb
+    network: chapel
+    source:
+      address: "0xf86337e34914ce94aaB5BbE94121592A2630239B"
+      abi: Instance
+      startBlock: 18042617
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.5
+      language: wasm/assemblyscript
+      file: ../src/mapping-instance.ts
+      entities:
+        - Deposit
+        - Withdrawal
+      abis:
+        - name: Instance
+          file: ../abis/Instance.json
+      eventHandlers:
+        - event: Deposit(indexed bytes32,uint32,uint256)
+          handler: handleDeposit
+        - event: Withdrawal(address,bytes32,indexed address,uint256)
+          handler: handleWithdrawal
+  - kind: ethereum/contract
+    name: Instance-100-bnb
+    network: chapel
+    source:
+      address: "0x0326CdC29F3582311DeB1ff50b005dE96EbfCD24"
+      abi: Instance
+      startBlock: 18042675
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.5
+      language: wasm/assemblyscript
+      file: ../src/mapping-instance.ts
+      entities:
+        - Deposit
+        - Withdrawal
+      abis:
+        - name: Instance
+          file: ../abis/Instance.json
+      eventHandlers:
+        - event: Deposit(indexed bytes32,uint32,uint256)
+          handler: handleDeposit
+        - event: Withdrawal(address,bytes32,indexed address,uint256)
+          handler: handleWithdrawal
+  - kind: ethereum/contract
+    name: Instance-100-busd
+    network: chapel
+    source:
+      address: "0x4Fe2EA977d960a4edE3574327C18A13363D274D9"
+      abi: Instance
+      startBlock: 18042492
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.5
+      language: wasm/assemblyscript
+      file: ../src/mapping-instance.ts
+      entities:
+        - Deposit
+        - Withdrawal
+      abis:
+        - name: Instance
+          file: ../abis/Instance.json
+      eventHandlers:
+        - event: Deposit(indexed bytes32,uint32,uint256)
+          handler: handleDeposit
+        - event: Withdrawal(address,bytes32,indexed address,uint256)
+          handler: handleWithdrawal
+  - kind: ethereum/contract
+    name: Instance-1000-busd
+    network: chapel
+    source:
+      address: "0x560f070d35D09060B525B85BF39362d78b81f0f8"
+      abi: Instance
+      startBlock: 18042568
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.5
+      language: wasm/assemblyscript
+      file: ../src/mapping-instance.ts
+      entities:
+        - Deposit
+        - Withdrawal
+      abis:
+        - name: Instance
+          file: ../abis/Instance.json
+      eventHandlers:
+        - event: Deposit(indexed bytes32,uint32,uint256)
+          handler: handleDeposit
+        - event: Withdrawal(address,bytes32,indexed address,uint256)
+          handler: handleWithdrawal
+  - kind: ethereum/contract
+    name: Instance-10000-busd
+    network: chapel
+    source:
+      address: "0x021414b8B8D48A8F3E811DE90b141803dD7F3935"
+      abi: Instance
+      startBlock: 18042620
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.5
+      language: wasm/assemblyscript
+      file: ../src/mapping-instance.ts
+      entities:
+        - Deposit
+        - Withdrawal
+      abis:
+        - name: Instance
+          file: ../abis/Instance.json
+      eventHandlers:
+        - event: Deposit(indexed bytes32,uint32,uint256)
+          handler: handleDeposit
+        - event: Withdrawal(address,bytes32,indexed address,uint256)
+          handler: handleWithdrawal
+  - kind: ethereum/contract
+    name: Instance-100000-busd
+    network: chapel
+    source:
+      address: "0x790aC9e9591F86bbE42Ba38e2D15175f2A0C8024"
+      abi: Instance
+      startBlock: 18042680
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.5
+      language: wasm/assemblyscript
+      file: ../src/mapping-instance.ts
+      entities:
+        - Deposit
+        - Withdrawal
+      abis:
+        - name: Instance
+          file: ../abis/Instance.json
+      eventHandlers:
+        - event: Deposit(indexed bytes32,uint32,uint256)
+          handler: handleDeposit
+        - event: Withdrawal(address,bytes32,indexed address,uint256)
+          handler: handleWithdrawal
+  - kind: ethereum/contract
+    name: Instance-0.01-btcb
+    network: chapel
+    source:
+      address: "0xC995Ad0a7dAF1C610761B13423A09E17A301B23B"
+      abi: Instance
+      startBlock: 18062239
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.5
+      language: wasm/assemblyscript
+      file: ../src/mapping-instance.ts
+      entities:
+        - Deposit
+        - Withdrawal
+      abis:
+        - name: Instance
+          file: ../abis/Instance.json
+      eventHandlers:
+        - event: Deposit(indexed bytes32,uint32,uint256)
+          handler: handleDeposit
+        - event: Withdrawal(address,bytes32,indexed address,uint256)
+          handler: handleWithdrawal
+  - kind: ethereum/contract
+    name: Instance-0.1-btcb
+    network: chapel
+    source:
+      address: "0x3Ac149dA452d410c09894a1A2c9e7395c9875067"
+      abi: Instance
+      startBlock: 18062250
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.5
+      language: wasm/assemblyscript
+      file: ../src/mapping-instance.ts
+      entities:
+        - Deposit
+        - Withdrawal
+      abis:
+        - name: Instance
+          file: ../abis/Instance.json
+      eventHandlers:
+        - event: Deposit(indexed bytes32,uint32,uint256)
+          handler: handleDeposit
+        - event: Withdrawal(address,bytes32,indexed address,uint256)
+          handler: handleWithdrawal
+  - kind: ethereum/contract
+    name: Instance-0.5-btcb
+    network: chapel
+    source:
+      address: "0x40e9695C88B76994D9410c4FBDc6b1d804502B6B"
+      abi: Instance
+      startBlock: 18062264
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.5
+      language: wasm/assemblyscript
+      file: ../src/mapping-instance.ts
+      entities:
+        - Deposit
+        - Withdrawal
+      abis:
+        - name: Instance
+          file: ../abis/Instance.json
+      eventHandlers:
+        - event: Deposit(indexed bytes32,uint32,uint256)
+          handler: handleDeposit
+        - event: Withdrawal(address,bytes32,indexed address,uint256)
+          handler: handleWithdrawal
+  - kind: ethereum/contract
+    name: Instance-1-btcb
+    network: chapel
+    source:
+      address: "0xDFe242dA9E38d90047c1c759818d5343353Ce398"
+      abi: Instance
+      startBlock: 18062272
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.5
@@ -51,9 +304,9 @@
     name: Proxy
     network: chapel
     source:
-      address: "0x8DB815A69c4AA75F4074806745ab6cE248EC7843"
+      address: "0x6C1aB7CDde09BfBa627c652c18FC26D714a548Db"
       abi: Proxy
-      startBlock: 17706720
+      startBlock: 18071391
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.5
@@ -67,3 +320,4 @@
       eventHandlers:
         - event: EncryptedNote(indexed address,bytes)
           handler: handleEncryptedNote
+
