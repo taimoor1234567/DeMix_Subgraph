@@ -130,7 +130,7 @@ The following is a list of our deployed subgraphs. Each `subgraph.yaml` file can
 | 5        | [Goerli-DeMix-Subgraph](https://thegraph.com/hosted-service/subgraph/decentraworlddewo/goerli-demix-Subgraph)           | Undeployed |
 
 
-
+...
 
 
 
